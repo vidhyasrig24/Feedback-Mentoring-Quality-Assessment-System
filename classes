@@ -1,0 +1,235 @@
+// Feedback & Mentoring Quality Assessment System
+
+class User {
+
+    int userId;
+    String name;
+    String email;
+    String password;
+    String role;
+
+    void registerUser() {
+        System.out.println("User registered successfully");
+    }
+
+    void loginUser() {
+        System.out.println("User logged in");
+    }
+
+    void updateProfile() {
+        System.out.println("User profile updated");
+    }
+
+    void submitFeedback() {
+        System.out.println("User submitted feedback");
+    }
+
+    void viewFeedback() {
+        System.out.println("Viewing submitted feedback");
+    }
+}
+
+
+class Mentor {
+
+   
+    int mentorId;
+    String mentorName;
+    String department;
+    String expertise;
+    double averageRating;
+
+    void viewMentorProfile() {
+        System.out.println("Viewing mentor profile");
+    }
+
+    void viewFeedback() {
+        System.out.println("Mentor viewing feedback");
+    }
+
+    void viewRatings() {
+        System.out.println("Viewing mentor ratings");
+    }
+
+    void updateMentorDetails() {
+        System.out.println("Mentor details updated");
+    }
+}
+
+
+
+class Feedback {
+
+    int feedbackId;
+    int userId;
+    int mentorId;
+    int rating;
+    String comment;
+    String dateSubmitted;
+    String status;
+
+
+    void addFeedback() {
+        System.out.println("Feedback added");
+    }
+
+    void updateFeedback() {
+        System.out.println("Feedback updated");
+    }
+
+    void deleteFeedback() {
+        System.out.println("Feedback deleted");
+    }
+
+    void viewFeedback() {
+        System.out.println("Viewing feedback");
+    }
+
+    void rateMentor() {
+        System.out.println("Mentor rated by user");
+    }
+}
+
+
+class FeedbackForm {
+
+
+    int formId;
+    String formTitle;
+    String questions;
+    String createdDate;
+    String createdBy;
+
+  
+    void createForm() {
+        System.out.println("Feedback form created");
+    }
+
+    void updateForm() {
+        System.out.println("Feedback form updated");
+    }
+
+    void deleteForm() {
+        System.out.println("Feedback form deleted");
+    }
+
+    void displayForm() {
+        System.out.println("Displaying feedback form");
+    }
+
+    void addQuestion() {
+        System.out.println("Question added to feedback form");
+    }
+}
+
+
+
+class Moderator {
+
+
+    int moderatorId;
+    String moderatorName;
+    String role;
+
+  
+    void reviewFeedback() {
+        System.out.println("Reviewing feedback");
+    }
+
+    void approveFeedback() {
+        System.out.println("Feedback approved");
+    }
+
+    void removeSpamFeedback() {
+        System.out.println("Spam feedback removed");
+    }
+
+    void blockUser() {
+        System.out.println("User blocked by moderator");
+    }
+}
+
+
+
+
+class FeedbackReport {
+
+    int reportId;
+    int mentorId;
+    double averageRating;
+    int totalFeedback;
+    String generatedDate;
+
+    void generateReport() {
+        System.out.println("Generating mentor feedback report");
+    }
+
+    void calculateAverageRating() {
+        System.out.println("Calculating average rating");
+    }
+
+    void displayReport() {
+        System.out.println("Displaying feedback report");
+    }
+}
+
+
+
+class FeedbackService {
+
+    
+    int userList;
+    int mentorList;
+    int feedbackList;
+    int formList;
+
+    
+    void registerUser() {
+        System.out.println("Registering user in system");
+    }
+
+    void submitFeedback() {
+        System.out.println("Submitting feedback to system");
+    }
+
+    void viewAllFeedback() {
+        System.out.println("Viewing all feedback");
+    }
+
+    void searchFeedback() {
+        System.out.println("Searching feedback");
+    }
+
+    void manageFeedback() {
+        System.out.println("Managing feedback system");
+    }
+}
+
+
+
+
+class SystemAdmin {
+
+
+    int adminId;
+    String adminName;
+    String role;
+
+
+    void addMentor() {
+        System.out.println("Mentor added to system");
+    }
+
+    void removeMentor() {
+        System.out.println("Mentor removed from system");
+    }
+
+    void createFeedbackForm() {
+        System.out.println("Admin created feedback form");
+    }
+
+    void manageSystem() {
+        System.out.println("Admin managing system");
+    }
+}
+
